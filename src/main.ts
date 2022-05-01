@@ -21,4 +21,5 @@ setAuthorizationToken()
 registerGlobalComponents(app)
 
 app.mount('#app')
-await AxeLive.run({ minimized: true })
+// eslint-disable-next-line @typescript-eslint/no-floating-promises
+AxeLive.run({ minimized: true })
